@@ -1,0 +1,76 @@
+/* Base Resets */
+* {
+    box-sizing: border-box;
+}
+.container{
+    display: block;
+    position: relative;
+    width: 90%;
+    background-color: aliceblue;
+    margin: 2rem auto;
+    padding: .5rem 1rem;    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.temp {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid white;
+    padding: .5rem 1rem;
+}
+.temp #current-temp, 
+.temp #current-temp ~ span {
+    font-weight: bold;
+    font-size: 2rem;
+    color:cornflowerblue
+}
+.min-max {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+    border: 1px solid white;
+    padding: .5rem 1rem;
+}
+#current_min,
+#current_min ~ span,
+#current_max,
+#current_max ~ span
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color:darkcyan
+}
+
+.wind {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+    border: 1px solid white;
+    padding: .5rem 1rem;
+}
+
+#wind_direction,
+#wind_direction ~ span,
+#wind_speed,
+#wind_speed ~ span
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color:darkslategray
+}
+
+@media only screen and (max-width: 600px) {
+    .temp, 
+    .min-max, 
+    .wind  {
+        width: 100%;
+    }
+}
+
+

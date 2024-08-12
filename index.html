@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Forecast App</title>
+        <!-- Link Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <!-- External CSS link-->
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <!-- Init function that runs as body loads -->
+    <body onload="init()">
+        <div class="container">
+            <h2>Weather Forecast for:</h2>
+            <h1 id="city"></h1>
+            <p id="current-date"></p>
+            <div class="temp">
+                <p>Temperature</p>
+                <p>
+                    <span id="current-temp"></span><span>&deg;</span>
+                </p>
+            </div>
+            <div class="min-max">
+                <p>min = <span id="current_min"></span><span>&deg;</span></p>
+                <p>max = <span id="current_max"></span><span>&deg;</span></p>
+            </div>
+            <div class="wind">
+                <p>direction = <span id="wind_direction"></span></p>
+                <p>speed = <span id="wind_speed"></span></p>
+            </div>
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
